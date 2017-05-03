@@ -1,4 +1,4 @@
-﻿# confusables.txt
+# confusables.txt
 # Date: 2016-06-16, 13:41:30 GMT
 # © 2016 Unicode®, Inc.
 # Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries.

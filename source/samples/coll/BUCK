@@ -1,0 +1,9 @@
+cxx_binary(
+  name = 'coll',
+  srcs = [
+    'coll.cpp',
+  ],
+  deps = [
+    '//:icu4c',
+  ],
+)

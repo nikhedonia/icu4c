@@ -1,0 +1,23 @@
+cxx_library(
+  name = 'ubreak',
+  srcs = [
+    'ubreak.c',
+  ],
+  deps = [
+    '//:icu4c',
+  ]
+)
+
+cxx_binary(
+  name = 'break',
+  srcs = [
+    'break.cpp',
+  ],
+  compiler_flags = [
+    '-std=c++11',
+  ],
+  deps = [
+    '//:icu4c',
+    ':ubreak',
+  ],
+)
