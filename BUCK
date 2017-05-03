@@ -51,6 +51,8 @@ genrule(
     'cp $(location //source/samples/date:Makefile.in) $OUT/source/samples/date/Makefile.in && ' +
     'mkdir -p $OUT/source/samples/layout/ && ' +
     'cp $(location //source/samples/layout:Makefile.in) $OUT/source/samples/layout/Makefile.in && ' +
+    'chmod +x $OUT/source/runConfigureICU && ' +
+    'chmod +x $OUT/source/configure && ' + 
     'cd $OUT && ./source/runConfigureICU $platform --enable-static --enable-samples=no && make',
 )
 
