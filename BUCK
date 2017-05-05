@@ -68,7 +68,7 @@ cxx_library(
   ],
 
   exported_platform_linker_flags = [
-    ('default', '-ldl'),
-    ('^linux.*', '-ldl')
+    ('default', ['-ldl']),
+    ('^linux.*', ['-ldl'])
   ]
 )
